@@ -6,7 +6,7 @@
 /*   By: kangkim <kangkim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 00:01:32 by kangkim           #+#    #+#             */
-/*   Updated: 2022/03/29 00:24:56 by kangkim          ###   ########.fr       */
+/*   Updated: 2022/03/29 21:21:26 by kangkim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "Fixed.hpp"
 
-Fixed::Fixed() : value_(0) {
+Fixed::Fixed(void) : value_(0) {
   std::cout << "Default constructor called" << std::endl;
 }
 
@@ -30,7 +30,7 @@ Fixed& Fixed::operator=(const Fixed &fixed) {
   return *this;
 }
 
-Fixed::~Fixed() {
+Fixed::~Fixed(void) {
   std::cout << "Destructor called" << std::endl;
 }
 
